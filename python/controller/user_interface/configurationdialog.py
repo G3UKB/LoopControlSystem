@@ -38,7 +38,7 @@ import traceback
 import serial
 
 sys.path.append(os.path.join('..', '..'))
-sys.path.append(os.path.join('..','..','..','Common','trunk','python'))
+sys.path.append(os.path.join('..','..','..','..','..','Common','trunk','python'))
 # Application imports
 from common.defs import *
 import autosetpoint
@@ -46,7 +46,6 @@ from controller.hw_interface import dispatcher
 from common import vswr
 
 # Common files
-#from common import cat
 import cat
 
 """

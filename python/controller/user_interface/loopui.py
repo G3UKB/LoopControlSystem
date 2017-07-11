@@ -35,17 +35,16 @@ import traceback
 from PyQt4 import QtCore, QtGui
 
 sys.path.append(os.path.join('..', '..'))
-sys.path.append(os.path.join('..','..','..','Common','trunk','python'))
+sys.path.append(os.path.join('..','..','..','..','..','Common','trunk','python'))
 
 # Application imports
 from common.defs import *
-#from controller.hw_interface import control_if
 import tracking
 import configurationdialog
 from controller.hw_interface import dispatcher
 from common import vswr
 from common import persist
-#from common import cat
+
 # Common files
 import cat
 import loop_control_if

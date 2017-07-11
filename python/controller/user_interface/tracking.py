@@ -29,11 +29,11 @@ import threading
 from time import sleep
 import traceback
 
+sys.path.append(os.path.join('..','..','..','..','..','Common','trunk','python'))
 # Application imports
 from common.defs import *
-#from common import cat
 
-sys.path.append(os.path.join('..','..','..','Common','trunk','python'))
+# Common files
 import cat
 
 """
