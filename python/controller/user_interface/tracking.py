@@ -31,7 +31,10 @@ import traceback
 
 # Application imports
 from common.defs import *
-from common import cat
+#from common import cat
+
+sys.path.append(os.path.join('..','..','..','Common','trunk','python'))
+import cat
 
 """
 

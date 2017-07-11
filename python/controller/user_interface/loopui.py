@@ -35,16 +35,20 @@ import traceback
 from PyQt4 import QtCore, QtGui
 
 sys.path.append(os.path.join('..', '..'))
+sys.path.append(os.path.join('..','..','..','Common','trunk','python'))
 
 # Application imports
 from common.defs import *
-from controller.hw_interface import control_if
+#from controller.hw_interface import control_if
 import tracking
 import configurationdialog
 from controller.hw_interface import dispatcher
 from common import vswr
 from common import persist
-from common import cat
+#from common import cat
+# Common files
+import cat
+import loop_control_if
 
 """
 GUI UI for loop controller
@@ -101,7 +105,7 @@ class LoopUI(QtGui.QMainWindow):
         if self.__state == None: self.__state = DEFAULT_STATE
         
         # Create the Loop API
-        self.__api = control_if.ControllerAPI(self.__settings[ARDUINO_SETTINGS][NETWORK], self.__respCallback, self.__evntCallback)
+        self.__api = loop_control_if.ControllerAPI(self.__settings[ARDUINO_SETTINGS][NETWORK], self.__respCallback, self.__evntCallback)
         
         # Create the command execution thread
         # A command queue with max 20 items

@@ -34,10 +34,13 @@ import traceback
 from PyQt4 import QtCore, QtGui
 
 sys.path.append(os.path.join('..', '..'))
+sys.path.append(os.path.join('..','..','..','Common','trunk','python'))
 # Application imports
 from common.defs import *
-from controller.hw_interface import control_if
-from common import cat
+
+# Common files
+#from common import cat
+import cat
 
 """
 Configuration dialog
