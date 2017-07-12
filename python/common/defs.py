@@ -106,7 +106,6 @@ CAT_MODE_GET = 'catmodeget'
 # Paths to state and configuration files
 SETTINGS_PATH = os.path.join('..', '..', 'settings', 'magcontrol.cfg')
 STATE_PATH = os.path.join('..', '..', 'settings', 'state.cfg')
-WMM_COF_PATH = os.path.join('..', '..', 'settings', 'WMM.COF')
 
 # Constants for settings
 ARDUINO_SETTINGS = 'arduinosettings'
